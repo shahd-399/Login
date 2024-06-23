@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <nav class="navbar bg-body-tertiary d-none">
+        <div class="container">
+            <a class="navbar-brand">SMART LOGIN</a>
+            <button type="button" class="btn btn-outline-warning">Logout</button>
+        </div>
+    </nav>
+    <div class="wellcome position-fixed start-50 top-50 translate-middle p-5 text-center d-none">
+    </div>
+    <div class="container text-center d-flex flex-wrap justify-content-center align-items-baseline mt-5">
+        <div class="signUp-box p-5 d-none">
+            <form action="">
+            <h1 class="mb-3">Smart Login System</h1>
+            <div class="mb-3">
+                <input type="text" class="form-control" id="userName" placeholder="Enter your name">
+            </div>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="userMail" placeholder="Enter your email">
+            </div>
+            <div class="mb-4">
+                <input type="password" class="form-control" id="userPassword" placeholder="Enter password">
+            </div>
+
+            <p class="msg text-success d-none">Success</p>
+            <p class="msg text-danger d-none">email already exists or not valid</p>
+            <p class="msg text-danger d-none">All inputs is required</p>
+
+            <button id="SignUpBtn" type="button" class="btn btn-outline-info w-100 mt-1 mb-3 ">Sign Up</button>
+
+
+            <span class="text-light">You have an account? 
+            <a href="" id="signInLink" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Signin</a>
+            </span>
+            </form>
+        </div>
+
+
+        <div class="login-box p-5 d-block">
+            <form action="">
+            <h1 class="mb-3">Smart Login System</h1>
+            <div class="mb-3">
+                <input type="email" class="form-control" id="loginMail" placeholder="Enter your email">
+            </div>
+            <div class="mb-4">
+                <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password">
+            </div>
+
+
+            <p class="msg2 text-danger d-none">incorrect email or password</p>
+            <p class="msg2 text-danger d-none">All inputs is required</p>
+
+
+            <button id="loginBtn" type="button" class="btn btn-outline-info w-100 mt-1 mb-3">Login</button>
+
+
+            <span class="text-light">Don’t have an account? <a href="#" id="signUpLink" class="link-light link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover">Sign Up</a>
+            </span>
+            </form>
+        </div>
+    </div>
+
+
+
+    <script src="main.js"></script>
+</body>
+</html>
